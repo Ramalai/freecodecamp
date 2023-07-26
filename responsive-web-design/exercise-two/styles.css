@@ -1,3 +1,28 @@
+body {
+     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*imagem de fundo do corpo completo da página*/
+}
+
 h1, h2, p {
     text-align: center; /*centralizar elemento*/
+}
+
+.menu {
+    width: 80%; /*largura da página*/
+    background-color: burlywood; /*cor de fundo*/
+    margin-left: auto; /*centraliza o div do lado esquerdo dentro do body*/
+    margin-right: auto; /*centraliza o div do lado direito dentro do body*/
+}
+
+.flavor {
+    text-align: left; /*alinha o texto para esquerda, direita ou centro dentro do .menu*/
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+.item p {
+    display: inline-block;
 }
