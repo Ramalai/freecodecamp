@@ -1,9 +1,22 @@
 body {
      background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*imagem de fundo do corpo completo da página*/
+     font-family: sans-serif;
 }
 
 h1, h2, p {
     text-align: center; /*centralizar elemento*/
+}
+
+h1, h2 {
+    font-family: Impact, Serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .menu {
@@ -12,7 +25,7 @@ h1, h2, p {
     margin-left: auto; /*centraliza o div do lado esquerdo dentro do body*/
     margin-right: auto; /*centraliza o div do lado direito dentro do body*/
     padding: 20px;
-    max-width: 900px;
+    max-width: 500px;
 }
 
 .flavor, .dessert{
@@ -27,4 +40,13 @@ h1, h2, p {
 
 .item p {
     display: inline-block;
+}
+
+.established {
+    font-style: italic;
+}
+
+hr {
+    height: 3px;
+    background-color: brown;
 }
