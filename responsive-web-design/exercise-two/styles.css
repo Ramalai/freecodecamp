@@ -1,6 +1,7 @@
 body {
      background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*imagem de fundo do corpo completo da página*/
      font-family: sans-serif;
+     padding: 20px; /*adicionando um pouco de espaço interno no body*/
 }
 
 h1, h2, p {
@@ -39,7 +40,10 @@ h2 {
 }
 
 .item p {
-    display: inline-block;
+    display: inline-block; /*transformar o bloco em linha*/
+    margin: 5px 0px;
+    font-size: 18px;
+
 }
 
 .established {
@@ -47,6 +51,32 @@ h2 {
 }
 
 hr {
-    height: 3px;
+    height: 2px; /*aumentar a altura da linha de divisão*/
     background-color: brown;
+    border-color: brown; /*Existe uma aresta ao redor das linha, as arestas são chamadas de bordas, cada lado pode ter uma cor diferente. Cada aresta tem 1px, somando com os 3px da height resulta em um total de 5px*/
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/*FOOTER*/
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+a:visited { /*muda as propriedades do link após ele ser visitado (pseudosseletor)*/
+    color: grey;
+}
+
+a:hover { /*muda as propriedades do link quando passa o mouse por cima (pseudosseletor)*/
+    color: brown;
+}
+
+a:active { /*muda as propriedades do link quando quando de fato tiver sido clicado usando um  pseudosseletor*/
+    color: white;
 }
