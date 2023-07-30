@@ -4,6 +4,13 @@ body {
      padding: 20px; /*adicionando um pouco de espaço interno no body*/
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
 h1, h2, p {
     text-align: center; /*centralizar elemento*/
 }
@@ -14,6 +21,8 @@ h1, h2 {
 
 h1 {
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -70,7 +79,7 @@ a {
 }
 
 a:visited { /*muda as propriedades do link após ele ser visitado (pseudosseletor)*/
-    color: grey;
+    color: black;
 }
 
 a:hover { /*muda as propriedades do link quando passa o mouse por cima (pseudosseletor)*/
@@ -78,5 +87,9 @@ a:hover { /*muda as propriedades do link quando passa o mouse por cima (pseudoss
 }
 
 a:active { /*muda as propriedades do link quando quando de fato tiver sido clicado usando um  pseudosseletor*/
-    color: white;
+    color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
 }
