@@ -1,6 +1,8 @@
 h1 {
     text-align: center;
+    background-color: rgb(0, 255, 255);
 }
+
 .marker {
     background-color: red;
     height: 25px; /* por padrão o elemento DIV tem altura e largura 0 quando não tem nenhum conteúdo*/ 
@@ -8,14 +10,46 @@ h1 {
     margin: 10px auto; /* a propriedade margin defini de modo geral as propriedade margin-top, left, right e bottom*/
 }
 
-.one{
-    background-color: red;
+.red{
+    background-color: rgb(255, 0, 0); /*modelo aditivo RGB, usado em dispositivos eletrônicos*/
 }
 
-.two {
-    background-color: green;
+/*.red {
+    .red {
+  background: linear-gradient(180deg, rgb(255, 0, 0) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%);
+}
+    A função linear-gradient é muito flexível -- aqui está a sintaxe básica que você vai usar neste tutorial:
+
+    linear-gradient(gradientDirection, color1, color2, ...);
+    gradientDirection é a direção da linha usada para a transição. color1 e color2 são argumentos de cor, que são as cores que serão usadas na transição em si. Elas podem ser de qualquer tipo de cor, incluindo palavras-chave de cores, hex, rgb, ou hsl.
+    
+    Agora você aplicará um gradiente vermelho a verde ao longo de uma linha de 90 graus ao primeiro marcador.
+  */
+
+.green {
+    background-color: rgb(0, 127, 0); /*modelo aditivo RGB, usado em dispositivos eletrônicos*/
 }
 
-.three {
-    background-color: blue;
+.blue {
+    background-color: rgb(0, 0, 255); /*modelo aditivo RGB, usado em dispositivos eletrônicos*/
 }
+
+.container {
+    background-color: rgb(255, 255, 255); /*modelo subtrativo CMYK, usado em impressão. RGB é uma função do css, a função é um trecho de código que pode receber uma entrada e executar uma ação específica. A função do CSS rgb aceita valores, ou argumentos, para vermelho, verde e azul, e produz uma cor: rgb(red, green, blue);. Cada valor vermelho, verde e azul é um número de 0 a 255. 0 significa que há 0% dessa cor e é preta. 255 significa que há 100% dessa cor.*/
+    padding: 10px 0;
+}
+/*O modelo de cores de HSL, ou matiz, saturação e luz, é outra forma de representar cores.
+
+A função do CSS hsl aceita 3 valores: um número de 0 a 360 para o matiz, uma porcentagem de 0 a 100 para saturação e uma porcentagem de 0 a 100 para a luz.
+
+Se você imaginar um circulo cromático, a cor vermelha fica a 0 graus, verde é a 120 graus e azul está a 240 graus.
+
+Saturação é a intensidade de uma cor de 0%, ou cinza, até 100% para cor pura. Você deve adicionar o sinal % de percentual aos valores de saturação e luz.
+
+A luz é o nível de brilho no qual uma cor aparece, de 0%, ou preta completa, até 100%, branco total, com 50% de neutralidade.*/
+
+/*Um gradiente é quando uma cor muda para outra. A função CSS linear-gradient permite que você controle a direção da transição ao longo de uma linha e quais cores são usadas.
+
+Uma coisa a lembrar é que a função linear-gradient realmente cria um elemento image e que ela geralmente é pareada com a propriedade background que pode aceitar uma imagem como um valor.*/
+
+
