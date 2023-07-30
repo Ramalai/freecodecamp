@@ -1,6 +1,5 @@
 h1 {
     text-align: center;
-    background-color: rgb(0, 255, 255);
 }
 
 .marker {
@@ -10,8 +9,28 @@ h1 {
     margin: 10px auto; /* a propriedade margin defini de modo geral as propriedade margin-top, left, right e bottom*/
 }
 
-.red{
-    background-color: rgb(255, 0, 0); /*modelo aditivo RGB, usado em dispositivos eletrônicos*/
+.red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  }
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+  }
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  }
+
+.container {
+    background-color: rgb(255, 255, 255); /*modelo subtrativo CMYK, usado em impressão. RGB é uma função do css, a função é um trecho de código que pode receber uma entrada e executar uma ação específica. A função do CSS rgb aceita valores, ou argumentos, para vermelho, verde e azul, e produz uma cor: rgb(red, green, blue);. Cada valor vermelho, verde e azul é um número de 0 a 255. 0 significa que há 0% dessa cor e é preta. 255 significa que há 100% dessa cor.*/
+    padding: 10px 0;
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5; /*inseri opacidade*/
 }
 
 /*.red {
@@ -26,18 +45,6 @@ h1 {
     Agora você aplicará um gradiente vermelho a verde ao longo de uma linha de 90 graus ao primeiro marcador.
   */
 
-.green {
-    background-color: rgb(0, 127, 0); /*modelo aditivo RGB, usado em dispositivos eletrônicos*/
-}
-
-.blue {
-    background-color: rgb(0, 0, 255); /*modelo aditivo RGB, usado em dispositivos eletrônicos*/
-}
-
-.container {
-    background-color: rgb(255, 255, 255); /*modelo subtrativo CMYK, usado em impressão. RGB é uma função do css, a função é um trecho de código que pode receber uma entrada e executar uma ação específica. A função do CSS rgb aceita valores, ou argumentos, para vermelho, verde e azul, e produz uma cor: rgb(red, green, blue);. Cada valor vermelho, verde e azul é um número de 0 a 255. 0 significa que há 0% dessa cor e é preta. 255 significa que há 100% dessa cor.*/
-    padding: 10px 0;
-}
 /*O modelo de cores de HSL, ou matiz, saturação e luz, é outra forma de representar cores.
 
 A função do CSS hsl aceita 3 valores: um número de 0 a 360 para o matiz, uma porcentagem de 0 a 100 para saturação e uma porcentagem de 0 a 100 para a luz.
