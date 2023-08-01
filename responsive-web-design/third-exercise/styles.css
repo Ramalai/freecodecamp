@@ -2,28 +2,40 @@ h1 {
     text-align: center;
 }
 
-.marker {
-    background-color: red;
-    height: 25px; /* por padrão o elemento DIV tem altura e largura 0 quando não tem nenhum conteúdo*/ 
-    width: 200px;
-    margin: 10px auto; /* a propriedade margin defini de modo geral as propriedade margin-top, left, right e bottom*/
-}
-
-.red {
-    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
-  }
-  
-  .green {
-    background: linear-gradient(#55680D, #71F53E, #116C31);
-  }
-  
-  .blue {
-    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-  }
-
 .container {
     background-color: rgb(255, 255, 255); /*modelo subtrativo CMYK, usado em impressão. RGB é uma função do css, a função é um trecho de código que pode receber uma entrada e executar uma ação específica. A função do CSS rgb aceita valores, ou argumentos, para vermelho, verde e azul, e produz uma cor: rgb(red, green, blue);. Cada valor vermelho, verde e azul é um número de 0 a 255. 0 significa que há 0% dessa cor e é preta. 255 significa que há 100% dessa cor.*/
     padding: 10px 0;
+}
+
+.marker {
+  background-color: red;
+  height: 25px; /* por padrão o elemento DIV tem altura e largura 0 quando não tem nenhum conteúdo*/ 
+  width: 200px;
+  margin: 10px auto; /* a propriedade margin defini de modo geral as propriedade margin-top, left, right e bottom*/
+}
+
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.cap, .sleeve {
+  display: inline-block; /* utilizado para deixar as barras branca claro na mesma linha*/
+}
+
+.red {
+  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 hsl(223, 59%, 31%, 0.8);
 }
 
 .sleeve {
@@ -31,6 +43,7 @@ h1 {
     height: 25px;
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.5; /*inseri opacidade*/
+    border-left: 10px double rgba(0,0, 0, 0.75); /*A propriedade abreviada border-left permite que você defina a largura da borda esquerda, o estilo e a cor ao mesmo tempo.*/
 }
 
 /*.red {
